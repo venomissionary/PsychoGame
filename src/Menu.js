@@ -3,17 +3,11 @@ class Menu extends Phaser.Scene {
         super("Menu");
     }
 
-
-    preload( ) {
-
-    }
-
     create() {
 
-
     }
 
-    update() {
-
+    update(){
+        
     }
 }
