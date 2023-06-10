@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Psycho game </title>
     <style>
+        body {
+            background-color: black;
+        }
     #displaygame {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
         background-color: black;
-        height: 100vhl;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1920px;
+        height: 1080px;
     }
 </style>
 </head>
 <body>
     <div id = "displaygame" ></div>
     <script src = "lib/phaser.js"></script>
-    <script src = "src/Load.js"></script>
-    <script src = 'src/Menu.js'></script>
-    <script src = 'src/Play.js'></script>
+    <script src =  'src/Menu.js'></script>
+    <script src = 'src/PlayScenes.js' ></script>
+    <script src = 'src/Prefabs/Player.js'></script>
+    <script src = 'src/Prefabs/Enemy.js'></script>
+    <script src = 'src/Level_1.js'></script>
+    <script src = "src/main.js" ></script>
 
-    <script src = "src/main.js"></script>
+
 
 
     
