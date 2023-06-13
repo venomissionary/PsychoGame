@@ -1,4 +1,9 @@
+import Menu from './Menu.js'
+import Cutscene1  from './Cutscene1.js'
 
+import Level_1 from './Level_1.js'
+import Cutscene2 from './Cutscene2.js'
+import Level_2 from './Level_2.js'
 let config = { 
     type: Phaser.CANVAS,
     width: 1920,
@@ -13,7 +18,7 @@ let config = {
     backgroundColor: '#000000',
     parent: 'displaygame',
 
-    scene: [Menu, PlayScenes, Level_1]
+    scene: [Menu, Cutscene1, Level_1, Cutscene2, Level_2]
 
 
 }
@@ -50,6 +55,10 @@ as for now locations of the code is now seperated between comment lines for best
 
 the game will be a top down, horror game, Marion/the player will end up in Bates mansion and will have to escape 
 and find 10 pieces of evidence around the mansion and avoid Mrs.Bates mother and escape from the front door.  
+
+
+- added new levels, collision, working cameras, new music ,rereanged cutscenes, Player and enemy is now proper seperate as files at prefabs.  
+Item equips when player walks on them and new sounds!
 
 
 

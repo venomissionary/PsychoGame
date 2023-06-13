@@ -1,3 +1,11 @@
+class Enemy extends Phaser.GameObjects.Sprite {
+    constructor(scene, x, y) {
+        super(scene, x,y, 'texture', 'frame');
+        scene.add.existing(this);
+    
+    
+    
+    }
+  
 
-
-//Enemy sprite is coming soon. It will be appear here in a later date.
+}
