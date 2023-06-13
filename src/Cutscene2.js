@@ -9,7 +9,7 @@ export class Cutscene2 extends Phaser.Scene {
         this.load.audio('Marion', 'assets/Menu_assets/Marion_Theme.mp3');
         this.load.image('text2', 'assets/story_assets/introtext2.png');
         this.load.image('scene5' , 'assets/story_assets/Scene6.png');
-        this.load.audio('Patrol_car', 'assets/menu_assets/Deep_treble.mp3');
+        this.load.audio('Patrol_car', 'assets/Menu_assets/Deep_treble.mp3');
 
 
 
