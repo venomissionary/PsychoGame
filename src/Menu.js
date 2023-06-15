@@ -52,7 +52,7 @@ export class Menu extends Phaser.Scene {
             this.cameras.main.fadeOut(1000,0,0,0);
             setTimeout(() => {
                 this.sound.stopAll();
-                this.scene.start('Cutscene4');
+                this.scene.start('Level_1');
             }, 2000);
         });
 
