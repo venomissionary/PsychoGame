@@ -116,7 +116,7 @@ import Menu from './Menu.js';
             if (this.paper_amount === 5) {
                 this.stat.setAlpha(1);
                 this.sound.stopAll();
-                this.cameras.main.fadeOut(2000,0,0,0);
+                this.cameras.main.fadeOut(1000,0,0,0);
                 setTimeout(() => {
                     this.sound.stopAll();
                     this.scene.start('Cutscene4');
@@ -164,9 +164,9 @@ import Menu from './Menu.js';
             callback: () => {
                const timecount = Math.floor(this.clock.getRepeatCount());
                 this.clock_text.setText(`Time: ${timecount.toString().padStart(2, '0')}`);
-                if (timecount ===  0) {
+                if (timecount ===  -1 || timecount === 0) {
                     this.game_over();
-                } else if (timecount <= 10) {
+                } else if (timecount <= 10 && timecount <= 2) {
                     this.Bates_jumpscare = Phaser.Math.Between(1, 3);
                     if (this.Bates_jumpscare === 1) {
                         this.scare();
