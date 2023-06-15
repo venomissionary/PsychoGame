@@ -10,14 +10,10 @@ export class Cutscene1 extends Phaser.Scene {
         this.load.image('Arrow', 'assets/story_assets/Arrow.png');
         this.load.image('text1', 'assets/story_assets/introText1.png');
 
-
-
-
     }
 
     create() {
         this.sound.play('Marion', { loop: true});
-
         this.cameras.main.fadeIn(1000,0,0,0);
         const button = this.add.image(this.cameras.main.centerX, this.cameras.main.centerY, 'Arrow').setOrigin(-2.5,-1.7).setScale(0.4);
         this.add.image(this.cameras.main.centerX, this.cameras.main.centerY, 'scene1').setOrigin(0.50,0.70).setScale(0.35);

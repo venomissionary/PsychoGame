@@ -1,9 +1,12 @@
 import Menu from './Menu.js'
 import Cutscene1  from './Cutscene1.js'
-
 import Level_1 from './Level_1.js'
 import Cutscene2 from './Cutscene2.js'
 import Level_2 from './Level_2.js'
+import Cutscene3 from './Cutscene3.js'
+import Level_3 from './Level_3.js'
+import  Cutscene4  from './Cutscene4.js'
+import  Cutscene5  from './Cutscene5.js'
 let config = { 
     type: Phaser.CANVAS,
     width: 1920,
@@ -18,11 +21,81 @@ let config = {
     backgroundColor: '#000000',
     parent: 'displaygame',
 
-    scene: [Menu, Cutscene1, Level_1, Cutscene2, Level_2]
+    scene: [Menu, Cutscene1, Level_1, Cutscene2, Level_2, Cutscene3, Level_3, Cutscene4, Cutscene5]
 
 
 }
 let game = new Phaser.Game(config);
+
+
+/* 
+
+important notes to keep track for 
+
++5 The game runs/executes without critical errors or crashes. (Graders will use Chrome, so be sure you game works in that browser.)
++5 Your project has a well-maintained and updated GitHub page that shows meaningful contributions, commits, and milestones throughout the course of the project's history.
++5 The game includes a title screen, some means to view credits, some means of "completion," and the ability to restart from within the game. 
+(These criteria are judged relative to your specific game, genre, artistic tone, etc.)
++5 Your project and code are well-structured and organized, including legible comments, appropriate data structures, sensible prefabs, 
+meaningful variable names, logical scene structures, etc. (Nathan's examples are a good baseline.)
+
+
++10 Your game uses at least five of Phaser's major components (besides Scenes), which may include: physics systems, cameras, particle effects, 
+text objects, the animation manager, the tween manager, timers, tilemaps, pipeline FX, etc. (Please list these components in your main.js file.)
+
+Phaser game components: 
+Cameras, 
+physics systems 
+animation manager 
+tween manager 
+timers 
+tilemaps 
+text objects
+
++10 Your game has artistic cohesion, i.e. the art, sound, typography, etc. 
+reflect your adaptation's aesthetic goals, your game is legible as a film adaptation, and your assets make sense together.
+
+Pokemon orthogonal style.
+
++10 Your game has mechanical cohesion, i.e. the mechanics reflect your adaptation's technical goals, 
+the game controls and performs as expected, and the mechanics are well-implemented.
+
+- Walking, running, stats, timer, item equipping, collisions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Basic Scene structure 
  [Main] -> {Menu} -> [Play]      
